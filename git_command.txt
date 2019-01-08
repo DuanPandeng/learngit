@@ -1,0 +1,12 @@
+git init 								#将目录变成Git可以管理的仓库
+git add									#把文件添加到仓库
+git commit -m							#把文件提交到仓库 -m后面输入的是本次提交的说明
+git status								#查看仓库当前的状态
+git diff								#difference
+git log --pretty=oneline				#显示从最近到最远的提交日志
+HEAD 表示当前版本也就是最新提交的commit，上一个版本就是HEAD^, 上上个版本就是HEAD^^,往上100个版本写成HEAD~100
+git reset --hard HEAD^/commit_id		#将当前版本退回到上一个/某一个版本
+git reflog								#记录每一次命令
+git checkout -- readme.txt				#让文件回到最近一次git commit or git add   --命令很重要，没有--就变成换成到另一个分支
+git reset HEAD <file>					#即可以回退版本，也可以把暂存区的修改回退到工作区
+git rm <file>							#从版本库中删除文件，恢复 git checkout -- <file>
