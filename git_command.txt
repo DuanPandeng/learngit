@@ -10,3 +10,4 @@ git reflog								#记录每一次命令
 git checkout -- readme.txt				#让文件回到最近一次git commit or git add   --命令很重要，没有--就变成换成到另一个分支
 git reset HEAD <file>					#即可以回退版本，也可以把暂存区的修改回退到工作区
 git rm <file>							#从版本库中删除文件，恢复 git checkout -- <file>
+git checkout -b dev						#创建dev分支，然后切换到dev分支
